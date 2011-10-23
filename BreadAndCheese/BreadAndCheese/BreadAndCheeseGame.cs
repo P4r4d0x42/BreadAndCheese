@@ -488,7 +488,7 @@ namespace BreadAndCheese
         }
         void resetPimentoPepperDisplay()
         {
-            pimentoPepperHeight = pimentoPepperHeight + (displayHeight * pimentoPepperStepFactor); // the real issue is the step factor was not set...fixed it
+            pimentoPepperHeight += (displayHeight * pimentoPepperStepFactor); // the real issue is the step factor was not set...fixed it
 
             if (pimentoPepperHeight > pimentoPepperHeightLimit)
             {
