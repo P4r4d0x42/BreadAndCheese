@@ -1,4 +1,4 @@
-//#define testdata // Using to pull debug and test data out at compile time. Just comment it out when you don't need it
+#define testdata // Using to pull debug and test data out at compile time. Just comment it out when you don't need it
 using System;
 using System.Collections.Generic;
 using System.Linq;
