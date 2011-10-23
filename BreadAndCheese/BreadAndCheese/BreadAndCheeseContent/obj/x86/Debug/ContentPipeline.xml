@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\Blue_Cheese.png</Source>
+      <Name>Images\Blue_Cheese</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Blue_Cheese.xnb</Output>
+      <Time>2011-10-14T02:28:30.7616048-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Cubanelle_Pepper.png</Source>
+      <Name>Images\Cubanelle_Pepper</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Cubanelle_Pepper.xnb</Output>
+      <Time>2011-10-14T02:31:39.1943825-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\French_Bread.png</Source>
+      <Name>Images\French_Bread</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\French_Bread.xnb</Output>
+      <Time>2011-10-14T02:33:52.882029-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Gorgonzola_Cheese.png</Source>
+      <Name>Images\Gorgonzola_Cheese</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Gorgonzola_Cheese.xnb</Output>
+      <Time>2011-10-14T02:35:16.4858109-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Hollandbell_Pepper.png</Source>
+      <Name>Images\Hollandbell_Pepper</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Hollandbell_Pepper.xnb</Output>
+      <Time>2011-10-14T02:38:03.6233706-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Italian_Bread.png</Source>
+      <Name>Images\Italian_Bread</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Italian_Bread.xnb</Output>
+      <Time>2011-10-14T02:38:54.8102983-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Redbell_Pepper.png</Source>
+      <Name>Images\Redbell_Pepper</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Redbell_Pepper.xnb</Output>
+      <Time>2011-10-14T02:40:46.6326942-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Pimento_Pepper.png</Source>
+      <Name>Images\Pimento_Pepper</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Pimento_Pepper.xnb</Output>
+      <Time>2011-10-14T02:39:56.2538127-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\catfish-cuttingboard-detail.jpg</Source>
+      <Name>Images\catfish-cuttingboard-detail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\catfish-cuttingboard-detail.xnb</Output>
+      <Time>2011-10-22T04:59:25-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Title.jpg</Source>
+      <Name>Images\Title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Title.xnb</Output>
+      <Time>2011-10-22T05:38:24-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Score.spritefont</Source>
+      <Name>Fonts\Score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Fonts\Score.xnb</Output>
+      <Time>2011-10-22T03:28:39-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheeseContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheeseContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Paradox\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-06-02T22:15:37.8045255-07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
