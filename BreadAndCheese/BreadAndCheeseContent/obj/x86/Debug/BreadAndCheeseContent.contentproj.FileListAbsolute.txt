@@ -1,0 +1,2 @@
+c:\users\paradox\documents\visual studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheeseContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\v-brain\Documents\Visual Studio 2010\Projects\BreadAndCheese\BreadAndCheese\BreadAndCheeseContent\obj\x86\Debug\ResolveAssemblyReference.cache
