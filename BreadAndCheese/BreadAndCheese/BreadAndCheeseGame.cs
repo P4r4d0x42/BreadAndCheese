@@ -190,24 +190,24 @@ namespace BreadAndCheese
             // Moving the Bread
             if (pad1.DPad.Left == ButtonState.Pressed || keys.IsKeyDown(Keys.Left))
             {
-                frenchBread.X = frenchBread.X + (frenchBread.XSpeed * -1);
+                frenchBread.X += (frenchBread.XSpeed * -1);
             }
             if (pad1.DPad.Right == ButtonState.Pressed || keys.IsKeyDown(Keys.Right))
             {
-                frenchBread.X = frenchBread.X + (frenchBread.XSpeed * 1);
+                frenchBread.X += (frenchBread.XSpeed * 1);
             }
             if (pad1.DPad.Up == ButtonState.Pressed || keys.IsKeyDown(Keys.Up))
             {
-                frenchBread.Y = frenchBread.Y + (frenchBread.YSpeed * -1);
+                frenchBread.Y += (frenchBread.YSpeed * -1);
             }
             if (pad1.DPad.Down == ButtonState.Pressed || keys.IsKeyDown(Keys.Down))
             {
-                frenchBread.Y = frenchBread.Y + (frenchBread.YSpeed * 1);
+                frenchBread.Y += (frenchBread.YSpeed * 1);
             }
             if (pad1.IsConnected)
             {
-                frenchBread.X = frenchBread.X + (frenchBread.XSpeed * pad1.ThumbSticks.Left.X);
-                frenchBread.Y = frenchBread.Y - (frenchBread.YSpeed * pad1.ThumbSticks.Left.Y);
+                frenchBread.X += (frenchBread.XSpeed * pad1.ThumbSticks.Left.X);
+                frenchBread.Y -= (frenchBread.YSpeed * pad1.ThumbSticks.Left.Y);
             }
 
 
@@ -438,13 +438,6 @@ namespace BreadAndCheese
         #endregion
 
         #region Game Setup Methods
-       /*
-        void setupSprites()
-        {   //This is how to use references so that methods can change the content of variables passed as parameters
-            //setupSprite(ref blueCheese, 0.05f, 200.0f, 200, 100, true);
-            //setupSprite(ref frenchBread, 0.15f, 120.0f, (displayWidth / 2) - 75, displayHeight / 1.3f, true);
-        }
-        */
         /// <summary>
         /// Scaling for different screens, sets initial sprite position and sets movement based on screen size etc.
         /// </summary>
