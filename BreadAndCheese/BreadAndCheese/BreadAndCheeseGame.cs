@@ -59,7 +59,6 @@ namespace BreadAndCheese
         GameSpriteStruct[] pimentoPeppers;
         int numberOfPimentoPeppers = 20;
         // Player stuff, should go in it's own Player Class
-        // Score
         int score,
             lives,
             highScore;
@@ -295,21 +294,22 @@ namespace BreadAndCheese
             // Keeps the Bread in the box
             // Not great but it does work
             // Would like to use the clamp()
-            if (frenchBread.X >= maxDisplayX - 80)
+            // TODO: Make it so bread doesn't go outside of the min/max display area, may have to do this in the controls area
+            if (frenchBread.X >= maxDisplayX)
             {
-                frenchBread.X = frenchBread.X - 6.666667f;
+                frenchBread.X = maxDisplayX;//frenchBread.X - 6.666667f;
             }
-            if (frenchBread.X <= minDisplayX - 40)
+            if (frenchBread.X <= minDisplayX)
             {
-                frenchBread.X = frenchBread.X + 6.666667f;
+                frenchBread.X = minDisplayX;//frenchBread.X + 6.666667f;
             }
-            if (frenchBread.Y >= maxDisplayY - 30)
+            if (frenchBread.Y >= maxDisplayY)
             {
-                frenchBread.Y = frenchBread.Y - 6.666667f;
+                frenchBread.Y = maxDisplayY;//frenchBread.Y - 6.666667f;
             }
-            if (frenchBread.Y <= minDisplayY - 20)
+            if (frenchBread.Y <= minDisplayY)
             {
-                frenchBread.Y = frenchBread.Y + 6.666667f;
+                frenchBread.Y = minDisplayY;//frenchBread.Y + 6.666667f;
             }
             // Collision detection  
             if (blueCheese.SpriteRectangle.Intersects(frenchBread.SpriteRectangle))
