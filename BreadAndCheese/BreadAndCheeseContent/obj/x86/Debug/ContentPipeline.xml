@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Blue_Cheese.xnb</Output>
-      <Time>2011-10-14T02:28:30-07:00</Time>
+      <Time>2011-10-14T02:28:30.7616048-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Cubanelle_Pepper.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Cubanelle_Pepper.xnb</Output>
-      <Time>2011-10-14T02:31:39-07:00</Time>
+      <Time>2011-10-14T02:31:39.1943825-07:00</Time>
     </Item>
     <Item>
       <Source>Images\French_Bread.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\French_Bread.xnb</Output>
-      <Time>2011-10-14T02:33:52-07:00</Time>
+      <Time>2011-10-14T02:33:52.882029-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Gorgonzola_Cheese.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Gorgonzola_Cheese.xnb</Output>
-      <Time>2011-10-14T02:35:16-07:00</Time>
+      <Time>2011-10-14T02:35:16.4858109-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Hollandbell_Pepper.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Hollandbell_Pepper.xnb</Output>
-      <Time>2011-10-14T02:38:03-07:00</Time>
+      <Time>2011-10-14T02:38:03.6233706-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Italian_Bread.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Italian_Bread.xnb</Output>
-      <Time>2011-10-14T02:38:54-07:00</Time>
+      <Time>2011-10-14T02:38:54.8102983-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Redbell_Pepper.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Redbell_Pepper.xnb</Output>
-      <Time>2011-10-14T02:40:46-07:00</Time>
+      <Time>2011-10-14T02:40:46.6326942-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Pimento_Pepper.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Paradox\Documents\Visual Studio 2010\git\BreadAndCheese\BreadAndCheese\BreadAndCheese\bin\x86\Debug\Content\Images\Pimento_Pepper.xnb</Output>
-      <Time>2011-10-14T02:39:56-07:00</Time>
+      <Time>2011-10-14T02:39:56.2538127-07:00</Time>
     </Item>
     <Item>
       <Source>Images\catfish-cuttingboard-detail.jpg</Source>
@@ -113,32 +113,32 @@
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T12:41:18-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-07-16T22:57:06.1809741-07:00</Value>
+        <Value>2011-06-02T22:15:37.8045255-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

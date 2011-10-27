@@ -78,7 +78,10 @@ namespace BreadAndCheese
             maxDisplayY;
 
         // Extra
-        float pimentoPepperHeight, pimentoPepperHeightLimit, pimentoPepperStepFactor;
+        float 
+            pimentoPepperHeight, 
+            pimentoPepperHeightLimit, 
+            pimentoPepperStepFactor;
         
 
 
@@ -187,22 +190,25 @@ namespace BreadAndCheese
             
             // Keyboard controls as well
             // Moving the Bread
-            if (pad1.DPad.Left == ButtonState.Pressed || keys.IsKeyDown(Keys.Left))
+            // TODO: Figure out how clamp works after converting/using frenchBread.XY as a vector2. Also, this seems like a bad place to put it
+            // It's not the center it's measuring from but the top left.
+            if (pad1.DPad.Left == ButtonState.Pressed || keys.IsKeyDown(Keys.Left) && frenchBread.X > minDisplayX)
             {
                 frenchBread.X += (frenchBread.XSpeed * -1);
             }
-            if (pad1.DPad.Right == ButtonState.Pressed || keys.IsKeyDown(Keys.Right))
+            if (pad1.DPad.Right == ButtonState.Pressed || keys.IsKeyDown(Keys.Right) && frenchBread.X < (maxDisplayX - frenchBread.SpriteRectangle.Width))
             {
                 frenchBread.X += (frenchBread.XSpeed * 1);
             }
-            if (pad1.DPad.Up == ButtonState.Pressed || keys.IsKeyDown(Keys.Up))
+            if (pad1.DPad.Up == ButtonState.Pressed || keys.IsKeyDown(Keys.Up) && frenchBread.Y > getPercentage(60, maxDisplayY))
             {
                 frenchBread.Y += (frenchBread.YSpeed * -1);
             }
-            if (pad1.DPad.Down == ButtonState.Pressed || keys.IsKeyDown(Keys.Down))
+            if (pad1.DPad.Down == ButtonState.Pressed || keys.IsKeyDown(Keys.Down) && frenchBread.Y < (maxDisplayY - frenchBread.SpriteRectangle.Height))
             {
                 frenchBread.Y += (frenchBread.YSpeed * 1);
             }
+            // TODO: Need to update this code so that the bread is bound when you use a controller
             if (pad1.IsConnected)
             {
                 frenchBread.X += (frenchBread.XSpeed * pad1.ThumbSticks.Left.X);
@@ -213,11 +219,7 @@ namespace BreadAndCheese
             // Allows the game to exit
             if (pad1.Buttons.Back == ButtonState.Pressed || keys.IsKeyDown(Keys.Escape))
                 this.Exit();
-
-
-
-            
-            
+   
         }
         private void updateBlueCheese()
         {
@@ -288,33 +290,11 @@ namespace BreadAndCheese
         }
         private void updateFrenchBread()
         {
+            // TODO: Convert this to a Vector2!!!!!!!!AHHHHHHHAHAHAHAHAHArrrrrgrg
             frenchBread.SpriteRectangle.X = (int)frenchBread.X;
             frenchBread.SpriteRectangle.Y = (int)frenchBread.Y;
 
-            // Keeps the Bread in the box
-            // Not great but it does work
-            // Would like to use the clamp()
-            // TODO: Make it so bread doesn't go outside of the min/max display area, may have to do this in the controls area
-            // Fix that but it seems it measures from the center of the bread which doesn't really work as well as it could
-            // May want to consider moving this into the control code and not here. Still would be nice to use clamp on it
-
-            if (frenchBread.X >= (maxDisplayX - minDisplayX))
-            {
-                frenchBread.X = (maxDisplayX - minDisplayX);
-            }
-            if (frenchBread.X <= (minDisplayX - minDisplayX))
-            {
-                frenchBread.X = (minDisplayX - minDisplayX);
-            }
-            if (frenchBread.Y >= (maxDisplayY - minDisplayY))
-            {
-                frenchBread.Y = (maxDisplayY - minDisplayY);
-            }
-            if (frenchBread.Y <= getPercentage(60,maxDisplayY))
-            {
-                frenchBread.Y = getPercentage(60, maxDisplayY);
-                Console.WriteLine("frenchBread.Y: " + frenchBread.Y);
-            }
+            
             // Collision detection  
             if (blueCheese.SpriteRectangle.Intersects(frenchBread.SpriteRectangle))
             {
