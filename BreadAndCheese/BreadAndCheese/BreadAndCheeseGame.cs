@@ -295,21 +295,25 @@ namespace BreadAndCheese
             // Not great but it does work
             // Would like to use the clamp()
             // TODO: Make it so bread doesn't go outside of the min/max display area, may have to do this in the controls area
-            if (frenchBread.X >= maxDisplayX)
+            // Fix that but it seems it measures from the center of the bread which doesn't really work as well as it could
+            // May want to consider moving this into the control code and not here. Still would be nice to use clamp on it
+
+            if (frenchBread.X >= (maxDisplayX - minDisplayX))
             {
-                frenchBread.X = maxDisplayX;//frenchBread.X - 6.666667f;
+                frenchBread.X = (maxDisplayX - minDisplayX);
             }
-            if (frenchBread.X <= minDisplayX)
+            if (frenchBread.X <= (minDisplayX - minDisplayX))
             {
-                frenchBread.X = minDisplayX;//frenchBread.X + 6.666667f;
+                frenchBread.X = (minDisplayX - minDisplayX);
             }
-            if (frenchBread.Y >= maxDisplayY)
+            if (frenchBread.Y >= (maxDisplayY - minDisplayY))
             {
-                frenchBread.Y = maxDisplayY;//frenchBread.Y - 6.666667f;
+                frenchBread.Y = (maxDisplayY - minDisplayY);
             }
-            if (frenchBread.Y <= minDisplayY)
+            if (frenchBread.Y <= getPercentage(60,maxDisplayY))
             {
-                frenchBread.Y = minDisplayY;//frenchBread.Y + 6.666667f;
+                frenchBread.Y = getPercentage(60, maxDisplayY);
+                Console.WriteLine("frenchBread.Y: " + frenchBread.Y);
             }
             // Collision detection  
             if (blueCheese.SpriteRectangle.Intersects(frenchBread.SpriteRectangle))
