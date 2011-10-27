@@ -157,7 +157,7 @@ namespace BreadAndCheese
                     updateTitle();  // changes state to playingGame when A pressed
 #if testdata                    
                     updateDebugDisplay();
-                    Console.WriteLine("Press the ENTER key to Start");
+                    
 #endif
 
                     break;
@@ -270,23 +270,35 @@ namespace BreadAndCheese
              *     (by default, this writes to the Output Window in Visual Studio, just like Debug.Writeline)
             */
 
-            // TODO: Shorten the text need to write Console.Writeline
-            // TODO: Setup state switching here so it shows data pertinate to what you would want to see for each screen
+            // TODO: Shorten the text need to write Console.Writeline and add COLOUR!!!!!!!
+            
             Console.Clear();
-            // Cheese
-            Console.WriteLine("CX: " + blueCheese.X);
-            Console.WriteLine("CY: " + blueCheese.Y);
-            Console.WriteLine("CXSpeed: " + blueCheese.XSpeed);
-            Console.WriteLine("CYSpeed: " + blueCheese.YSpeed);
-            // Bread
-            Console.WriteLine("BX: " + frenchBread.X);
-            Console.WriteLine("BY: " + frenchBread.Y);
-            Console.WriteLine("BXSpeed: " + frenchBread.XSpeed);
-            Console.WriteLine("BYSpeed: " + frenchBread.YSpeed);
-            // Score
-            Console.WriteLine("Score: " + score);
-            Console.WriteLine("High Score: " + highScore);
-           
+            
+            switch (state)
+            {
+                case GameState.titleScreen:
+                    Console.WriteLine("High Score: " + highScore);
+                    Console.WriteLine("Press the ENTER key to Start");
+                    break;
+                case GameState.playingGame:
+            
+                // Cheese
+                Console.WriteLine("CX: " + blueCheese.X);
+                Console.WriteLine("CY: " + blueCheese.Y);
+                Console.WriteLine("CXSpeed: " + blueCheese.XSpeed);
+                Console.WriteLine("CYSpeed: " + blueCheese.YSpeed);
+                // Bread
+                Console.WriteLine("BX: " + frenchBread.X);
+                Console.WriteLine("BY: " + frenchBread.Y);
+                Console.WriteLine("BXSpeed: " + frenchBread.XSpeed);
+                Console.WriteLine("BYSpeed: " + frenchBread.YSpeed);
+                // Score
+                Console.WriteLine("Score: " + score);
+                Console.WriteLine("High Score: " + highScore);
+                break;
+            }
+
+
         }
         private void updateFrenchBread()
         {
@@ -532,6 +544,7 @@ namespace BreadAndCheese
         }
         private void updateTitle()
         {
+            // TODO: Add exit code here
             if (pad1.Buttons.Start == ButtonState.Pressed || keys.IsKeyDown(Keys.Enter))
             {
                 startGame();
