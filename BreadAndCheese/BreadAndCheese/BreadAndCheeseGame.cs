@@ -38,6 +38,7 @@ namespace BreadAndCheese
         #region Platform object code (Bread Bat)
         // New object based code, not sure where exactly this is supposed to go so i am sticking it here for the time being
 
+
         struct BarSpriteStruct
         {
             private Texture2D spriteTexture;
