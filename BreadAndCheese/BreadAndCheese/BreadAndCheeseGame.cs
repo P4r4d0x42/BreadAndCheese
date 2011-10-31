@@ -35,9 +35,58 @@ namespace BreadAndCheese
         }
 
         GameState state = GameState.titleScreen;
+        #region Platform object code (Bread Bat)
+        // New object based code, not sure where exactly this is supposed to go so i am sticking it here for the time being
 
+        struct BarSpriteStruct
+        {
+            private Texture2D spriteTexture;
+            private Rectangle spriteRectangle;
+            private float x;
+            private float y;
+            private float xSpeed;
+            private float ySpeed;
 
-       // Structure that i can re-use for all my sprites
+            public void LoadTexture(Texture2D inSpriteTexture)
+            {
+                spriteTexture = inSpriteTexture;
+            }
+
+            public void StartGame(
+                float widthFactor,
+                float ticksToCrossScreen,
+                float inDisplayWidth,
+                float initialX,
+                float initialY)
+            {
+                spriteRectangle.Width = (int)((inDisplayWidth * widthFactor) + 0.5f);
+                float aspectRatio =
+                    (float)spriteTexture.Width / spriteTexture.Height;
+                spriteRectangle.Height =
+                    (int)((spriteRectangle.Width / aspectRatio) + 0.5f);
+                x = initialX;
+                y = initialY;
+                xSpeed = inDisplayWidth / ticksToCrossScreen;
+                ySpeed = xSpeed;
+            }
+
+            public void Draw(SpriteBatch spriteBatch)
+            {
+                spriteBatch.Draw(spriteTexture, spriteRectangle, Color.White);
+            }
+
+            public void Update()
+            {
+                GamePadState gamePad1 = GamePad.GetState(PlayerIndex.One);
+                x = x + (xSpeed * gamePad1.ThumbSticks.Left.X);
+                y = y - (ySpeed * gamePad1.ThumbSticks.Left.Y);
+                spriteRectangle.X = (int)x;
+                spriteRectangle.Y = (int)y;
+            }
+        }
+
+        #endregion
+        // Structure that i can re-use for all my sprites
         struct GameSpriteStruct
         {
             public Texture2D SpriteTexture;
@@ -74,7 +123,7 @@ namespace BreadAndCheese
             overScanPercentage = 10.0f,
             minDisplayX,
             maxDisplayX,
-            minDisplayY,
+            minDisplayY, 
             maxDisplayY;
 
         // Extra
@@ -181,6 +230,7 @@ namespace BreadAndCheese
 
             base.Update(gameTime);
         }
+        
         #region Update Methods
         private void updateControls()
         {
@@ -244,7 +294,7 @@ namespace BreadAndCheese
             {
                 blueCheese.YSpeed = Math.Abs(blueCheese.YSpeed) * -1;
                 if (lives > 0)
-                {            // TODO: Kill Death
+                {            
                     lives--; // Death lives here
                 }
             }
